@@ -5,6 +5,12 @@ public class Product {
     private double price;
     private int stock;
 
+    public Product(String productName, double price, int stock) {
+        this.productName = productName;
+        this.price = price;
+        this.stock = stock;
+    }
+
     public String getProductName() {
         return productName;
     }
@@ -27,5 +33,14 @@ public class Product {
 
     public void setStock(int stock) {
         this.stock = stock;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "productName='" + productName + '\'' +
+                ", price=" + price +
+                ", stock=" + stock +
+                '}';
     }
 }

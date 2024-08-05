@@ -1,5 +1,6 @@
 package se.lexicon;
 
+@FunctionalInterface
 public interface Conditional {
-    void test(Product p);
+    boolean test(Product p);
 }
